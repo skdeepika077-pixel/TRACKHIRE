@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackHire – Internship & Job Application Tracker</title>
+  <meta name="description" content="TrackHire helps you track internship and job applications, deadlines, analytics, and progress with a clean offline-ready interface.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-light">
+  <header class="site-header">
+    <div class="brand">
+      <a href="#landing" class="brand-link">TrackHire</a>
+      <span class="brand-tag">Application Tracker</span>
+    </div>
+    <nav class="landing-nav">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it Works</a>
+      <a href="#faq">FAQ</a>
+      <button class="btn btn-ghost theme-toggle-btn" id="theme-toggle" type="button">🌓</button>
+      <button class="btn btn-ghost" id="open-dashboard-btn">Open Dashboard</button>
+    </nav>
+  </header>
+
+  <main class="main-frame">
+    <section id="landing-page" class="landing-page">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="badge">Premium workflow for ambitious applicants</p>
+          <h1>Track Every Internship & Job Application In One Place</h1>
+          <p>Stay organized, monitor progress, never miss deadlines, and land your dream opportunity with a beautiful SaaS-style tracker that works offline.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="navigateTo('add')">Get Started</button>
+            <button class="btn btn-secondary" onclick="navigateTo('dashboard')">Open Dashboard</button>
+          </div>
+        </div>
+        <article class="hero-panel">
+          <div class="hero-panel-content">
+            <div class="stat-card">
+              <p>Applications tracked</p>
+              <strong>0 now, unlimited later</strong>
+            </div>
+            <div class="stat-card">
+              <p>Automatic deadline reminders</p>
+              <strong>Stay on schedule</strong>
+            </div>
+            <div class="stat-card">
+              <p>Offline first experience</p>
+              <strong>Load once and continue</strong>
+            </div>
+            <div class="stat-card">
+              <p>Insights & analytics</p>
+              <strong>Measure progress visually</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <section id="features" class="section-block">
+        <div class="section-heading">
+          <div>
+            <h2>Built for fast, polished application tracking</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Centralized workflow</h3>
+            <p>Keep every internship and job opportunity in one clean place with status updates, deadlines, and notes.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Deadline intelligence</h3>
+            <p>Automatic countdown badges and overdue alerts help you prioritize the next important deadline.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Offline-ready</h3>
+            <p>Track your hunt without a backend. Data lives in your browser storage and works offline after loading.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Analytics & charts</h3>
+            <p>Generate visual insights from your applications with pure JavaScript charts and customizable reports.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section-block">
+        <div class="section-heading">
+          <div>
+            <h2>How TrackHire keeps your hunt moving</h2>
+            <p class="section-description">A simple, slick workflow for seeing your progress and staying in control.</p>
+          </div>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <h3>Capture every opportunity</h3>
+            <p>Add company, role, deadline, notes, salary, and application status in a few seconds.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Stay one step ahead</h3>
+            <p>See upcoming deadlines, overdue applications, and action items in a dedicated dashboard.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Measure your momentum</h3>
+            <p>Track offer and interview rates as your data grows and focus on what is working.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Export and import</h3>
+            <p>Backup your data instantly with JSON and CSV export, then restore it anytime.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <h2>Why TrackHire feels like a modern SaaS dashboard</h2>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <article class="feature-card">
+            <strong>Smart filters</strong>
+            <p>Quickly sort by status, company, deadline, or priority in any view.</p>
+          </article>
+          <article class="feature-card">
+            <strong>Confident notes</strong>
+            <p>Store interview prep, application feedback, and follow-up reminders in one place.</p>
+          </article>
+          <article class="feature-card">
+            <strong>Keyboard shortcuts</strong>
+            <p>Open the command palette with Ctrl + K and navigate the app without missing a beat.</p>
+          </article>
+          <article class="feature-card">
+            <strong>Clean branding</strong>
+            <p>Minimal, polished layouts inspired by Linear, Stripe, and Vercel dashboards.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <h2>TrackHire by the numbers</h2>
+            <p class="section-description">Data-driven insights and productivity metrics to keep every application moving forward.</p>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <article class="feature-card">
+            <strong>100%</strong>
+            <p>Offline compatibility once loaded in the browser.</p>
+          </article>
+          <article class="feature-card">
+            <strong>7-day</strong>
+            <p>Deadline alerts and countdowns for urgent follow-ups.</p>
+          </article>
+          <article class="feature-card">
+            <strong>0 setup</strong>
+            <p>No backend, database, or auth required to use the tracker.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <h2>Trusted by ambitious candidates</h2>
+          </div>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>"TrackHire transformed how I manage applications. Everything is easier to find and deadlines are always visible."</p>
+            <strong>Emma R., Product Design Intern</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>"The analytics page helped me understand where my pipeline was strongest. I never miss a deadline anymore."</p>
+            <strong>Marcus L., Software Engineering Candidate</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>"A beautifully designed tracker that works offline and keeps my job hunt organized from first application to offer."</p>
+            <strong>Priya S., Data Analyst Applicant</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="section-block">
+        <div class="section-heading">
+          <div>
+            <h2>FAQs</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <article class="faq-card">
+            <h3>Can I use TrackHire without an account?</h3>
+            <p>Yes. TrackHire stores your data in browser local storage, so it works without sign-up or backend services.</p>
+          </article>
+          <article class="faq-card">
+            <h3>How do I import or export my data?</h3>
+            <p>Use the Settings page to export JSON/CSV and restore from a JSON backup whenever you need.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Is the dashboard responsive?</h3>
+            <p>Absolutely. The app supports mobile, tablet, and desktop layouts with responsive navigation and cards.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" style="text-align:center; padding-top: 2rem;">
+        <h2>Ready to take control of your job search?</h2>
+        <p class="section-description">Start tracking applications, monitoring deadlines, and landing opportunities in a modern dashboard experience.</p>
+        <button class="btn btn-primary" onclick="navigateTo('add')">Start tracking now</button>
+      </section>
+    </section>
+
+    <section id="app-page" class="app-page hidden">
+      <aside class="app-sidebar">
+        <div class="side-nav">
+          <button class="nav-item" data-target="dashboard"><span class="icon">🏠</span> Dashboard</button>
+          <button class="nav-item" data-target="applications"><span class="icon">📄</span> Applications</button>
+          <button class="nav-item" data-target="add"><span class="icon">➕</span> Add Application</button>
+          <button class="nav-item" data-target="analytics"><span class="icon">📊</span> Analytics</button>
+          <button class="nav-item" data-target="settings"><span class="icon">⚙️</span> Settings</button>
+        </div>
+      </aside>
+      <div class="app-content">
+        <section class="app-topbar">
+          <div class="app-title">
+            <p class="badge">TrackHire Workspace</p>
+            <h1 id="route-title">Your applications</h1>
+          </div>
+          <div class="page-actions">
+            <button class="btn btn-ghost" id="mobile-nav-toggle">Menu</button>
+            <button class="btn btn-secondary" onclick="toggleTheme()">Toggle Theme</button>
+            <button class="btn btn-ghost" onclick="handleCommandToggle(event)">Command Palette</button>
+          </div>
+        </section>
+
+        <div id="mobile-nav" class="mobile-nav hidden" aria-hidden="true">
+          <div class="side-nav mobile-side-nav">
+            <button class="nav-item" data-target="dashboard"><span class="icon">🏠</span> Dashboard</button>
+            <button class="nav-item" data-target="applications"><span class="icon">📄</span> Applications</button>
+            <button class="nav-item" data-target="add"><span class="icon">➕</span> Add Application</button>
+            <button class="nav-item" data-target="analytics"><span class="icon">📊</span> Analytics</button>
+            <button class="nav-item" data-target="settings"><span class="icon">⚙️</span> Settings</button>
+          </div>
+        </div>
+
+        <section id="view-dashboard" class="view"></section>
+
+        <section id="view-applications" class="view hidden">
+          <div class="section-heading">
+            <div>
+              <p class="badge">Application manager</p>
+              <h2>All applications</h2>
+            </div>
+            <button class="btn btn-primary" onclick="navigateTo('add')">Add new</button>
+          </div>
+          <div class="filter-group">
+            <button class="btn btn-outline" data-filter="All">All</button>
+            <button class="btn btn-outline" data-filter="Wishlist">Wishlist</button>
+            <button class="btn btn-outline" data-filter="Applied">Applied</button>
+            <button class="btn btn-outline" data-filter="Assessment">Assessment</button>
+            <button class="btn btn-outline" data-filter="Interview">Interview</button>
+            <button class="btn btn-outline" data-filter="Offer">Offer</button>
+            <button class="btn btn-outline" data-filter="Selected">Selected</button>
+            <button class="btn btn-outline" data-filter="Rejected">Rejected</button>
+          </div>
+          <div class="sort-group">
+            <button class="btn btn-outline" data-sort="Newest">Newest</button>
+            <button class="btn btn-outline" data-sort="Oldest">Oldest</button>
+            <button class="btn btn-outline" data-sort="Company Name">Company Name</button>
+            <button class="btn btn-outline" data-sort="Deadline">Deadline</button>
+          </div>
+          <div class="search-bar">
+            <span>🔍</span>
+            <input id="search-input" type="search" placeholder="Search by company, role, or status" autocomplete="off">
+          </div>
+          <div id="applications-list"></div>
+        </section>
+
+        <section id="view-add" class="view hidden">
+          <div class="section-heading">
+            <div>
+              <p class="badge">Application form</p>
+              <h2 id="form-heading">Add application</h2>
+            </div>
+          </div>
+          <form id="application-form">
+            <div class="form-grid">
+              <label>
+                Company Name
+                <input id="company-name" type="text" required>
+              </label>
+              <label>
+                Role
+                <input id="role-name" type="text" required>
+              </label>
+              <label>
+                Location
+                <input id="location-name" type="text">
+              </label>
+              <label>
+                Application URL
+                <input id="application-url" type="url" placeholder="https://">
+              </label>
+              <label>
+                Salary/Stipend
+                <input id="application-salary" type="text" placeholder="$40k - $60k">
+              </label>
+              <label>
+                Applied Date
+                <input id="applied-date" type="date" required>
+              </label>
+              <label>
+                Deadline
+                <input id="deadline-date" type="date">
+              </label>
+              <label>
+                Job Type
+                <select id="job-type">
+                  <option>Internship</option>
+                  <option>Full Time</option>
+                  <option>Part Time</option>
+                  <option>Contract</option>
+                  <option>Remote</option>
+                </select>
+              </label>
+              <label>
+                Status
+                <select id="application-status">
+                  <option>Wishlist</option>
+                  <option>Applied</option>
+                  <option>Assessment</option>
+                  <option>Interview</option>
+                  <option>Offer</option>
+                  <option>Selected</option>
+                  <option>Rejected</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Notes
+              <textarea id="application-notes" placeholder="Interview prep, feedback, or other details"></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="form-submit">Create application</button>
+              <button type="button" class="btn btn-outline" onclick="navigateTo('applications')">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="view-details" class="view hidden"></section>
+
+        <section id="view-analytics" class="view hidden"></section>
+
+        <section id="view-settings" class="view hidden">
+          <div class="section-heading">
+            <div>
+              <p class="badge">Application settings</p>
+              <h2>Manage storage, data, and preferences</h2>
+            </div>
+          </div>
+          <div class="settings-group">
+            <button class="btn btn-primary" id="export-json">Export JSON</button>
+            <button class="btn btn-primary" id="export-csv">Export CSV</button>
+            <button class="btn btn-secondary" id="import-json">Import JSON</button>
+            <button class="btn btn-secondary" id="backup-data">Backup Data</button>
+            <button class="btn btn-secondary" id="restore-data">Restore Data</button>
+            <button class="btn btn-danger" id="clear-data">Clear All Data</button>
+          </div>
+          <div class="panel" style="margin-top:1.5rem;">
+            <h3>Theme settings</h3>
+            <label>
+              Display mode
+              <select id="theme-select">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+            </label>
+            <p class="section-description">Your theme preference is saved locally and restored on next visit.</p>
+          </div>
+          <div class="panel" style="margin-top:1.5rem;">
+            <h3>Storage information</h3>
+            <p id="storage-info">Checking storage usage...</p>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer class="section-block" style="padding: 2rem 0 4rem;">
+      <div class="section-heading">
+        <div>
+          <h2>TrackHire</h2>
+          <p class="section-description">A fully offline-friendly application tracker built for interns, job candidates, and ambitious teams.</p>
+        </div>
+      </div>
+      <div class="feature-grid" style="grid-template-columns: repeat(auto-fit,minmax(200px,1fr));">
+        <article class="feature-card">
+          <strong>Launch</strong>
+          <p>Deploy as a static site to GitHub Pages, Netlify, or Vercel with no server required.</p>
+        </article>
+        <article class="feature-card">
+          <strong>Privacy</strong>
+          <p>Data stays in your browser, so nothing is sent to a third-party backend.</p>
+        </article>
+        <article class="feature-card">
+          <strong>Support</strong>
+          <p>Use the command palette and keyboard shortcuts to navigate quickly.</p>
+        </article>
+      </div>
+    </footer>
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+  <div id="modal-overlay" class="modal-overlay hidden" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <h3 id="modal-title">Confirm action</h3>
+      <p id="modal-message">Are you sure?</p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
+        <button class="btn btn-danger" id="modal-confirm">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="command-palette-overlay" class="command-palette hidden" aria-hidden="true">
+    <div class="command-box">
+      <input id="command-search" class="command-search" type="search" placeholder="Search commands or use Ctrl+K" autocomplete="off">
+      <div id="command-list" class="command-list"></div>
+    </div>
+  </div>
+
+  <input type="file" id="import-file" accept="application/json" hidden>
+  <script src="app.js" defer></script>
+</body>
+</html>
